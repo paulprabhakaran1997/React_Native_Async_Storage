@@ -3,6 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import React, { useState } from 'react';
 import {
+  LogBox,
   StyleSheet,
   Text,
   View,
@@ -13,6 +14,8 @@ import Signup from './src/views/Signup';
 import { DataProvider } from './src/context/DataContext';
 
 const Stack = createStackNavigator();
+
+LogBox.ignoreAllLogs()
 
 
 const App = () =>{
